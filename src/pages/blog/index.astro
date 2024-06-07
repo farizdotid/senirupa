@@ -27,12 +27,9 @@ const mostRecentPost: CollectionEntry<"blog"> = blogPosts[0];
 const otherPosts: CollectionEntry<"blog">[] = blogPosts.slice(1);
 
 // Define variables for page content
-const title: string = "Your Gateway to Construction Excellence";
-const subTitle: string =
-  "Explore the latest news, tips, and insights from ScrewFast to enhance your construction projects. From product spotlights to project management strategies, our blog is your go-to resource for all things hardware and construction.";
 const secondTitle: string = "Insights";
 const secondSubTitle: string =
-  "Stay up-to-date with the latest trends and developments in the construction industry with insights from ScrewFast's team of industry experts. ";
+  "Beberapa bahan bacaan yang mungkin bermanfaat untuk kamu";
 
 const pageTitle: string = `Blog | ${SITE.title}`;
 ---
@@ -42,17 +39,17 @@ const pageTitle: string = `Blog | ${SITE.title}`;
   structuredData={{
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": "https://screwfast.uk/blog",
-    url: "https://screwfast.uk/blog",
-    name: "Blog | ScrewFast",
+    "@id": "https://senirupa.ekrafpurwakarta.com/blog",
+    url: "https://senirupa.ekrafpurwakarta.com/blog",
+    name: "Blog | Subsektor Seni Rupa",
     description:
-      "Stay up-to-date with the latest trends and developments in the construction industry with insights from ScrewFast's team of industry experts.",
+      "Bergabunglah dengan Sub Sektor Seni Rupa, komunitas kreatif di Purwakarta yang menyediakan wadah untuk seniman, kurator, kolektor, dan pecinta seni rupa. Kami mengadakan workshop, diskusi, dan pameran untuk mengembangkan kemampuan dan memperluas jaringan. Temukan informasi terbaru tentang acara, ikuti kegiatan seru, dan pamerkan karya seni Anda bersama kami!",
     isPartOf: {
       "@type": "WebSite",
-      url: "https://screwfast.uk",
-      name: "ScrewFast",
+      url: "https://screwfast.ukhttps://senirupa.ekrafpurwakarta.com/",
+      name: "Subsektor Seni Rupa",
       description:
-        "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs.",
+        "Bergabunglah dengan Sub Sektor Seni Rupa, komunitas kreatif di Purwakarta yang menyediakan wadah untuk seniman, kurator, kolektor, dan pecinta seni rupa.",
     },
     inLanguage: "en-US",
   }}
@@ -60,39 +57,9 @@ const pageTitle: string = `Blog | ${SITE.title}`;
   <section
     class="mx-auto max-w-[85rem] space-y-8 px-4 pt-16 sm:px-6 lg:px-8 2xl:max-w-full"
   >
-    <!--Page header-->
-    <div class="mx-auto max-w-3xl text-left sm:text-center">
-      <h1
-        class="block text-balance text-4xl font-bold tracking-tight text-neutral-800 dark:text-neutral-200 md:text-5xl lg:text-6xl"
-      >
-        {title}
-      </h1>
-
-      <p
-        class="mt-4 text-pretty text-lg text-neutral-600 dark:text-neutral-400"
-      >
-        {subTitle}
-      </p>
-    </div>
-  </section>
-
-  <section
-    class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 2xl:max-w-full"
-  >
-    <!--Blog posts grid-->
-    <div class="grid gap-6 lg:grid-cols-2">
-      {otherPosts.map((blogEntry) => <CardBlog blogEntry={blogEntry} />)}
-    </div>
-  </section>
-  <!--Most recent blog post-->
-  <section
-    class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 2xl:max-w-full"
-  >
-    <CardBlogRecent blogEntry={mostRecentPost} />
-  </section>
   <!--Insights section-->
   <section
-    class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 2xl:max-w-full"
+    class="mx-auto max-w-[85rem] px-4 py-2 sm:px-6 lg:px-8 lg:py-14 2xl:max-w-full"
   >
     <div class="mx-auto mb-10 max-w-2xl text-center lg:mb-14">
       <h2
