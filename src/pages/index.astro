@@ -1,0 +1,78 @@
+---
+// Import the necessary components
+import MainLayout from "@/layouts/MainLayout.astro";
+import HeroSection from "@components/sections/landing/HeroSection.astro";
+import HeroSectionAlt from "@components/sections/landing/HeroSectionAlt.astro";
+import ClientsSection from "@components/sections/landing/ClientsSection.astro";
+import FeaturesGeneral from "@components/sections/features/FeaturesGeneral.astro";
+import TestimonialsSection from "@components/sections/testimonials/TestimonialsSection.astro";
+import FAQ from "@components/sections/FAQ.astro";
+import heroImage from "@images/hero-image.avif";
+import faqs from "@data/faqs.json";
+import features from "@data/features.json";
+
+---
+
+<MainLayout>
+
+  <HeroSection
+    title=`purw<span
+        class="text-yellow-500 dark:text-yellow-400">ART</span>a`
+    subTitle="Wadah kreatif untuk  seluruh entitas seni rupa agar dapat menjalin silaturahmi dan mengembangkan kemampuan Seni Rupa."
+    primaryBtn="Karya Seniman Purwakarta"
+    primaryBtnURL="#"
+    secondaryBtn="Daftar Karya"
+    secondaryBtnURL="/contact"
+    withReview={false}
+    src={heroImage}
+    alt="Stack of ScrewFast product boxes containing assorted hardware tools"
+  />
+
+  <ClientsSection
+    title="Our Collaboration"
+    subTitle="Pihak - pihak yang sudah bekerja sama dengan kami"
+  />
+
+  <FeaturesGeneral
+    title="Tujuan"
+    subTitle="Berikut adalah beberapa tujuan kami"
+    features={features}
+  />
+
+  <TestimonialsSection
+    title="Pesan untuk Seniman Purwakarta"
+    subTitle=""
+    ;
+    testimonials={[
+      {
+        content:
+          "Berkarya adalah upaya untuk tetap produktif sekaligus dapat memperluas wawasan dan jejaring,menjadi wadah guyub dan solid antar pelaku seni rupa di Purwakarta.",
+        author: "Om Pikoy",
+        role: "Kepala Bidang Subsektor Seni Rupa",
+        avatarSrc:
+          "https://raw.githubusercontent.com/farizdotid/images_ekraf_pwk/main/subsektor_senirupa/om_pikoy.jpg",
+      },
+    ]}
+    statistics={[
+      {
+        count: "50+",
+        description:
+          "Karya yang sudah terdaftar",
+      },
+      {
+        count: "20+",
+        description:
+          "Kegiatan yang sudah diselenggarakan",
+      },
+     
+    ]}
+  />
+
+  <FAQ title="FAQ" faqs={faqs} />
+
+  <HeroSectionAlt
+    title="Daftarkan Karyamu disini!"
+    subTitle="Punya karya yang keren dan ingin dilihat banyak orang? Sub Sektor Seni Rupa membuka pintu lebar-lebar buat kamu! Nggak peduli kamu pemula atau udah expert, karya kamu layak dapet apresiasi. Kami sering banget adain pameran dan acara seru lainnya yang pasti bikin karyamu lebih dikenal."
+    url="#"
+  />
+</MainLayout>

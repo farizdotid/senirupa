@@ -1,0 +1,48 @@
+---
+// Import the necessary dependencies
+import FooterSocialLink from "@components/ui/links/FooterSocialLink.astro";
+import EmailFooterInput from "@components/ui/forms/input/EmailFooterInput.astro";
+import enStrings from "@utils/navigation.ts";
+import frStrings from "@utils/fr/navigation.ts";
+import Icon from "@components/ui/icons/Icon.astro";
+import BrandLogo from "@components/BrandLogo.astro";
+import { SITE } from "@data/constants";
+
+// Select the correct translation based on the page's lang prop:
+const strings = Astro.currentLocale === "fr" ? frStrings : enStrings;
+
+// Define the variables that will be used in this component
+const sectionThreeTitle: string = Astro.currentLocale === "fr" ? "Rester à jour" : "Stay up to date";
+const sectionThreeContent: string = Astro.currentLocale === "fr" ? "Restez informé des derniers outils et des offres exclusives." :
+  "Stay updated with the latest tools and exclusive deals.";
+const crafted: string = Astro.currentLocale === "fr" ? "" : "Build with ❤️️ from ";
+---
+
+<footer class="w-full bg-neutral-300 dark:bg-neutral-900">
+  <div
+    class="mx-auto w-full max-w-[85rem] px-4 py-4 sm:px-6 lg:px-16 lg:pt-4 2xl:max-w-screen-2xl"
+  >
+   
+    <div
+      class="grid gap-y-2 sm:mt-2 sm:flex sm:items-center sm:justify-between sm:gap-y-0"
+    >
+      <div class="flex items-center justify-between">
+        <p class="text-sm text-neutral-600 dark:text-neutral-400">
+          © <span id="current-year"></span> {SITE.title}. {crafted}
+          <a
+            class="rounded-lg font-medium underline underline-offset-2 outline-none ring-zinc-500 transition duration-300 hover:text-neutral-700 hover:decoration-dashed focus:outline-none focus-visible:ring dark:ring-zinc-200 dark:hover:text-neutral-300"
+            href="https://ekrafpurwakarta.com/"
+            target="_blank"
+            rel="noopener noreferrer">Ekraf Purwakarta</a
+          >.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      const year = new Date().getFullYear();
+      const element = document.getElementById("current-year");
+      element!.innerText = year.toString();
+    </script>
+  </div>
+</footer>
