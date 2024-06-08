@@ -1,12 +1,12 @@
 ---
-title: "SF-AB A765"
-description: "Assorted Screw Set" 
+title: "Karya Piki Arto"
+description: "#001" 
 main:
-  id: 2
+  id: 1
   content: |
     Introducing the SF-AB A765 Assorted Screw Set – the ultimate solution for your screw fastening needs. This comprehensive set includes a wide variety of screws meticulously curated to tackle various projects with ease and precision.
-  imgCard: "@/images/sample_image.avif"
-  imgMain: "@/images/sample_image.avif"
+  imgCard: "https://raw.githubusercontent.com/farizdotid/images_ekraf_pwk/main/purwarupa/compressed/057_piki.jpg"
+  imgMain: "https://raw.githubusercontent.com/farizdotid/images_ekraf_pwk/main/purwarupa/compressed/057_piki.jpg"
   imgAlt: "Mockup boxes of assorted screw set"
 tabs:
   - id: "tabs-with-card-item-1"
@@ -45,5 +45,5 @@ tableData:
       - ["Material", "Stainless Steel"]
       - ["Finish", "Assorted"]
       - ["Package Contents", "Various screws in a set"]
-slug: a765  
+slug: karya001  
 ---
