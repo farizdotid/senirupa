@@ -33,7 +33,7 @@ export const OG = {
   locale: "en_US",
   type: "website",
   url: SITE.url,
-  title: `${SITE.title}: : Ekraf Purwakarta`,
+  title: `${SITE.title} - Ekraf Purwakarta`,
   description: "Wadah kreatif untuk  seluruh entitas seni rupa agar dapat menjalin silaturahmi dan mengembangkan kemampuan seni rupa.",
   image: ogImageSrc,
 };
