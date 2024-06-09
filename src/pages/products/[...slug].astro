@@ -152,18 +152,18 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`;
               <div class="text-center">
                 <img
                   class="mx-auto rounded-full"
-                  src="https://raw.githubusercontent.com/farizdotid/images_ekraf_pwk/main/subsektor_senirupa/om_pikoy.jpg"
+                  src=`${product.data.artist.avatar}`
                   alt="test"
                   width="160"
                   height="160"
                 />
               </div>
               <h2 class="mt-5 text-balance text-center text-3xl font-bold tracking-tight text-neutral-800 dark:text-neutral-200 md:leading-tight lg:text-4xl">
-                {product.data.artist}
+                {product.data.artist.name}
             </h2>
               <p class="mt-5 text-center">
                 <a
-                  href={`https://api.whatsapp.com/send?phone=${product.data.whatsapp}`}
+                  href={`https://api.whatsapp.com/send?phone=${product.data.artist.whatsapp}`}
                   target="_blank"
                   class="bg-purple-500 hover:bg-purple-700 inline-flex items-center rounded border border-white px-4 py-2 font-semibold text-white transition duration-300"
                   style="border-width: 2px;"
@@ -183,7 +183,7 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`;
               </p>
               <p class="mt-5 text-center">
                 <a
-                  href={`https://instagram.com/${product.data.instagram}`}
+                  href={`https://instagram.com/${product.data.artist.instagram}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   class="bg-purple-500 hover:bg-purple-700 inline-flex items-center rounded border border-white px-4 py-2 font-semibold text-white transition duration-300"

@@ -8,9 +8,12 @@ const productsCollection = defineCollection({
     schema: ({ image }) => z.object({
     title: z.string(),
     description: z.string(),
-    instagram: z.string().optional(),
-    whatsapp: z.string().optional(),
-    artist: z.string().optional(),
+    artist: z.object({
+      name: z.string(),
+      whatsapp: z.string(),
+      instagram: z.string(),
+      avatar: z.string(),
+    }),
     main: z.object({
       id: z.number(),
       content: z.string(),
