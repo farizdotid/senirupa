@@ -4,7 +4,7 @@ description: "#001"
 artist:
   name: "Piki Arto"
   whatsapp: "6289648867420"
-  instagram: "https://instagram.com/ruanghitam_artcolony"
+  instagram: "ruanghitam_artcolony"
   avatar: "https://raw.githubusercontent.com/farizdotid/images_ekraf_pwk/main/subsektor_senirupa/om_pikoy.jpg"
 main:
   id: 1
