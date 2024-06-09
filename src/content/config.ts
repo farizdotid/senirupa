@@ -8,6 +8,9 @@ const productsCollection = defineCollection({
     schema: ({ image }) => z.object({
     title: z.string(),
     description: z.string(),
+    instagram: z.string().optional(),
+    whatsapp: z.string().optional(),
+    artist: z.string().optional(),
     main: z.object({
       id: z.number(),
       content: z.string(),
@@ -28,12 +31,6 @@ const productsCollection = defineCollection({
       btnTitle: z.string(),
       btnURL: z.string(),
     }),
-    descriptionList: z.array(
-      z.object({
-        title: z.string(),
-        subTitle: z.string(),
-      })
-    ),
     specificationsLeft: z.array(
       z.object({
         title: z.string(),
@@ -44,12 +41,6 @@ const productsCollection = defineCollection({
       z.object({
         title: z.string(),
         subTitle: z.string(),
-      })
-    ).optional(),
-    tableData: z.array(
-      z.object({
-        feature: z.array(z.string()),
-        description: z.array(z.array(z.string())),
       })
     ).optional(),
   }),
