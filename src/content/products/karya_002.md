@@ -1,6 +1,7 @@
 ---
 title: "Karya Hafiz Kholil"
 description: "#002"
+slugUrlProduct: "karya002"
 artist:
   name: "Hafiz Kholil"
   whatsapp: "6289614662552"
@@ -28,7 +29,6 @@ longDescription:
   subTitle: |
     Sebatas pelampiasan terhadap kejenuhan menjadi pelacur seni. yang dituntut untuk melukiskan objek sesuai dengan pesanan. warna, motif dan bentuk, yang bebas sebagai media pelampiasan.
   btnTitle: "Berminat Membeli"
-  btnURL: "#"
 specificationsLeft:
   - title: "Ukuran"
     subTitle: "999cm x 999cm"

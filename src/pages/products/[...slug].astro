@@ -96,10 +96,26 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`;
                 {product.data.longDescription.subTitle}
               </p>
               <p class="mt-5">
-                <PrimaryCTA
-                  title={product.data.longDescription.btnTitle}
-                  url={product.data.longDescription.btnURL}
-                />
+                <a
+                  href={`https://api.whatsapp.com/send?phone=${product.data.artist.whatsapp}&text=Halo%2C%20Saya%20berminat%20untuk%20Karyanya%20yang%20dipajang%20di%20Website%20Seni%20Rupa%20(%20https%3A%2F%2Fsenirupa.ekrafpurwakarta.com%2Fproducts%2F${product.data.slugUrlProduct}%20).%20Caranya%20gimana%20ya%3F`}
+                  target="_blank"
+                  class="bg-purple-500 hover:bg-purple-700 inline-flex items-center rounded border border-white px-4 py-2 font-semibold text-white transition duration-300"
+                  style="border-width: 2px;"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="48"
+                    height="48"
+                    viewBox="0 0 24 24"
+                    class="mr-2 h-6 w-6"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M17 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2M1 2v2h2l3.6 7.59l-1.36 2.45c-.15.28-.24.61-.24.96a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25q0-.075.03-.12L8.1 13h7.45c.75 0 1.41-.42 1.75-1.03l3.58-6.47c.07-.16.12-.33.12-.5a1 1 0 0 0-1-1H5.21l-.94-2M7 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2"
+                    ></path>
+                  </svg>
+                  Saya berminat membeli ini
+                </a>
               </p>
             </div>
           </div>
@@ -158,9 +174,11 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`;
                   height="160"
                 />
               </div>
-              <h2 class="mt-5 text-balance text-center text-3xl font-bold tracking-tight text-neutral-800 dark:text-neutral-200 md:leading-tight lg:text-4xl">
+              <h2
+                class="mt-5 text-balance text-center text-3xl font-bold tracking-tight text-neutral-800 dark:text-neutral-200 md:leading-tight lg:text-4xl"
+              >
                 {product.data.artist.name}
-            </h2>
+              </h2>
               <p class="mt-5 text-center">
                 <a
                   href={`https://api.whatsapp.com/send?phone=${product.data.artist.whatsapp}`}

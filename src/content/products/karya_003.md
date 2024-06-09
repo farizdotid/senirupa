@@ -1,6 +1,7 @@
 ---
 title: "Karya Rison Siringo Ringo"
 description: "#003"
+slugUrlProduct: "karya003"
 artist:
   name: "Rison Siringo Ringo"
   whatsapp: "6289606488809"
@@ -28,7 +29,6 @@ longDescription:
   subTitle: |
     Cerita Pada karya lukisan ini adalah menceritakan perasaan sendiri dengan ukiran/polesan sesuai hati yang dirasakan dengan banyaknya masalah yang dirasakan sang pelukis tersebut, dan menggambarkan tiga ekspresi dengan rautan muka yang berbeda.
   btnTitle: "Berminat Membeli"
-  btnURL: "#"
 specificationsLeft:
   - title: "Ukuran"
     subTitle: "999cm x 999cm"

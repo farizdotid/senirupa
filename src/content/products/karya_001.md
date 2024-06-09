@@ -1,6 +1,7 @@
 ---
 title: "Karya Piki Arto"
 description: "#001"
+slugUrlProduct: "karya001"
 artist:
   name: "Piki Arto"
   whatsapp: "6289648867420"
@@ -28,7 +29,6 @@ longDescription:
   subTitle: |
     Goddess Of Dawn: Marici, she represent awakening,Triumph over evil,and victory inthe face of extreme hardship. She Is depicted as the goddess of dawn or light, a healer, or the one who seems enligtenment of all beings.
   btnTitle: "Berminat Membeli"
-  btnURL: "#"
 specificationsLeft:
   - title: "Ukuran"
     subTitle: "999cm x 999cm"
