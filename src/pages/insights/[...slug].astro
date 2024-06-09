@@ -28,12 +28,13 @@ const pageTitle: string = `${post.data.title} | ${SITE.title}`;
       <div class="grid gap-8 md:grid-cols-2 lg:gap-12">
         <div>
           <div class="h-64 overflow-hidden rounded-lg shadow-lg md:h-auto">
-            <Image
+            <img
               class="h-full w-full object-cover object-center"
               src={post.data.cardImage}
               alt={post.data.cardImageAlt}
               draggable={"false"}
-              format={"avif"}
+              width="512"
+              height="512"
             />
           </div>
           <div

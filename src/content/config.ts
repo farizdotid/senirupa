@@ -73,7 +73,7 @@ const insightsCollection = defineCollection({
   title: z.string(),
   description: z.string(),
   // contents: z.array(z.string()),
-  cardImage: image(),
+  cardImage: z.string(),
   cardImageAlt: z.string(),
   }),
 });
