@@ -5,7 +5,7 @@ export const SITE = {
   tagline: "purwakARTa",
   description: "Subsektor senirupa adalah salah satu  subsektor dari 17 subsektor yang ada di komite Ekraf, adapun kegiatan yg ada di subsektor seni rupa yaitu workshop seni rupa, diskusi seputar seni rupa, pameran karya. Kegiatan tersebut adalah upaya untuk aktivasi subsektor seni rupa untuk dapat berkontribusi di bidang seni rupa baik untuk pelaku pemula maupun yang sudah expert tanpa ada sekat yang membatasi antar pelaku seni rupa agar terbentuk menjadi suatu ekosistem senirupa di Purwakarta.",
   description_short: "Wadah kreatif untuk  seluruh entitas seni rupa agar dapat menjalin silaturahmi dan mengembangkan kemampuan seni rupa.",
-  url: "https://senirupa.ekrafpurwakarta.com/k",
+  url: "https://senirupa.ekrafpurwakarta.com/",
   author: "Ekraf Purwakarta - Subsektor Seni Rupa",
 };
 
